@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#15120e">
+<meta name="description" content="Fábrica de Cómics de San Patricio del Chañar. Sistema editorial para crear cuentos y cómics históricos y de ficción territorial.">
+<title>Fábrica de Cómics · San Patricio del Chañar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./"><span class="mark">FC</span><span><strong>FÁBRICA DE CÓMICS</strong><small>SAN PATRICIO DEL CHAÑAR</small></span></a>
+  <div class="status"><span class="dot"></span>SISTEMA EDITORIAL</div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <p class="kicker">ARCHIVO NARRATIVO TERRITORIAL · 01</p>
+    <h1>Historias que<br><em>nacen en Chañar.</em></h1>
+    <p class="lead">Una fábrica editorial para crear cómics y cuentitos sobre San Patricio del Chañar: historias reales, ficción, memoria y aventuras.</p>
+    <div class="actions"><button id="openFactory" class="primary">Entrar a la fábrica <span>→</span></button><button id="openMap" class="ghost">Ver sistema</button></div>
+  </div>
+  <div class="hero-stamp">CHAÑAR<br><small>HISTORIAS · PERSONAS · TERRITORIO</small></div>
+</section>
+
+<section id="factory" class="factory hidden">
+  <div class="section-head"><div><p class="kicker">CENTRO DE PRODUCCIÓN</p><h2>La fábrica</h2></div><span id="count">0 obras</span></div>
+  <div class="factory-grid">
+    <aside class="sidebar">
+      <button class="filter active" data-filter="todas">Todas <b>6</b></button>
+      <button class="filter" data-filter="historica">Históricas <b>2</b></button>
+      <button class="filter" data-filter="ficcion">Ficción <b>2</b></button>
+      <button class="filter" data-filter="mixta">Historia + ficción <b>1</b></button>
+      <button class="filter" data-filter="memoria">Memoria <b>1</b></button>
+    </aside>
+    <div class="works" id="works"></div>
+  </div>
+</section>
+
+<section id="system" class="system hidden">
+  <div class="section-head"><div><p class="kicker">ARQUITECTURA</p><h2>Mucho sistema detrás.</h2></div></div>
+  <div class="pipeline">
+    <div><b>01</b><strong>Archivo</strong><span>fuentes · lugares · personas · objetos</span></div>
+    <i>→</i><div><b>02</b><strong>Historia</strong><span>hechos · testimonios · ficción</span></div>
+    <i>→</i><div><b>03</b><strong>Guion</strong><span>escenas · personajes · ritmo</span></div>
+    <i>→</i><div><b>04</b><strong>Arte</strong><span>modelos · territorio · continuidad</span></div>
+    <i>→</i><div><b>05</b><strong>Obra</strong><span>cómic · cuento · experiencia digital</span></div>
+  </div>
+  <div class="truth">
+    <div><span>H</span><strong>HISTORIA</strong><p>Hechos respaldados por fuentes.</p></div>
+    <div><span>M</span><strong>MEMORIA</strong><p>Testimonios y recuerdos, identificados como tales.</p></div>
+    <div><span>T</span><strong>TERRITORIO</strong><p>Inspiración nacida del lugar.</p></div>
+    <div><span>F</span><strong>FICCIÓN</strong><p>Personajes y acontecimientos inventados.</p></div>
+  </div>
+</section>
+</main>
+<footer><span>Fábrica de Cómics · San Patricio del Chañar</span><span>Ocarina Producciones</span></footer>
+<script src="app.js"></script>
+</body>
+</html>
